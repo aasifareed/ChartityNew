@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CharityModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Blogs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ImagePath" Type="nvarchar" MaxLength="200" />
+    <Property Name="TitleAr" Type="nvarchar" MaxLength="500" />
+    <Property Name="TitleEn" Type="nvarchar" MaxLength="500" />
+    <Property Name="TitleTu" Type="nvarchar" MaxLength="500" />
+    <Property Name="DescriptionAr" Type="nvarchar(max)" />
+    <Property Name="DescriptionEn" Type="nvarchar(max)" />
+    <Property Name="DescriptionTu" Type="nvarchar(max)" />
+    <Property Name="Comments" Type="int" />
+    <Property Name="Likes" Type="int" />
+    <Property Name="Date" Type="date" />
+    <Property Name="IsDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="ContactUs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="PhoneNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Message" Type="nvarchar(max)" />
+    <Property Name="CreatedOn" Type="date" />
+  </EntityType>
+  <EntityType Name="Donations">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="150" />
+    <Property Name="Email" Type="nvarchar" MaxLength="150" />
+    <Property Name="DonationAmount" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="DonationLocation" Type="nvarchar" MaxLength="150" />
+    <Property Name="PaymentMethod" Type="nvarchar" MaxLength="150" />
+    <Property Name="DonationDate" Type="date" />
+  </EntityType>
+  <EntityType Name="Gallary">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ImagePath" Type="nvarchar(max)" />
+    <Property Name="TitleAr" Type="nvarchar" MaxLength="500" />
+    <Property Name="TitleEn" Type="nvarchar" MaxLength="500" />
+    <Property Name="TitleTu" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsDeleted" Type="nchar" MaxLength="10" />
+    <Property Name="CreatedOn" Type="date" />
+  </EntityType>
+  <EntityType Name="News">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ImagePath" Type="nvarchar(max)" />
+    <Property Name="TitleAr" Type="nvarchar" MaxLength="500" />
+    <Property Name="TitleEn" Type="nvarchar" MaxLength="500" />
+    <Property Name="TitleTu" Type="nvarchar" MaxLength="500" />
+    <Property Name="DescriptionAr" Type="nvarchar(max)" />
+    <Property Name="DescriptionEn" Type="nvarchar(max)" />
+    <Property Name="DescriptionTu" Type="nvarchar(max)" />
+    <Property Name="Goal" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Raised" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="CreatedOn" Type="date" />
+  </EntityType>
+  <EntityType Name="Slider">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ImagePath" Type="nvarchar" MaxLength="500" />
+    <Property Name="Isactive" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="CharityModelStoreContainer">
+    <EntitySet Name="Blogs" EntityType="Self.Blogs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ContactUs" EntityType="Self.ContactUs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Donations" EntityType="Self.Donations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Gallary" EntityType="Self.Gallary" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="News" EntityType="Self.News" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Slider" EntityType="Self.Slider" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

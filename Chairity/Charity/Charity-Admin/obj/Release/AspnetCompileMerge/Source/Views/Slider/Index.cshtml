@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewBag.Title = "Slider";
+}
+<style>
+    .modal-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: #00000d;
+        background-clip: padding-box;
+        border: 1px solid white;
+        border-radius: 0.3rem;
+        outline: 0;
+    }
+
+    table.dataTable tbody tr.selected {
+        color: #f8f9fa !important;
+        background-color: #738294 !important;
+    }
+</style>
+<div class="py-7">
+    <h4 class="text-left" style="margin-left: 20px;">Slider Images</h4>
+    <div class="px-4 px-md-6">
+        <div class="row">
+            <div class="col-6">
+
+            </div>
+            <div class="col-6 text-right">
+                <button type="button" class="mb-3 mx-1 btn btn-md btn-theme" data-toggle="modal" data-target="" onclick="OnAddNew();" data-backdrop="static" data-keyboard="false"><i class="fa fa-plus"></i> Add New Slider</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="px-4 px-md-6">
+        <div class="table-responsive">
+            <div id="SliderList"></div>
+        </div>
+    </div>
+    <div aria-hidden="true" aria-labelledby="myLargeModalLabel" id="myModal1" class="modal fade bd-example-modal-lg" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg" style="top:15%;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        Upload Slider
+                    </h5>
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true"> &times;</span></button>
+                </div>
+             @using (Html.BeginForm("AddUpdateSlider", "Slider", FormMethod.Post, new { enctype = "multipart/form-data" }))
+             {
+                <div class="modal-body" id="myModalBodyDiv1">
+                    <div class="form-group row">
+                        <div class="col">
+                            <label for="inputEmail3" class="col-sm-12 control-label">Select Slider</label>
+                            <input name="file" id="file" type="file" class="form-control" accept=".png,.jpg," style="width:100%;padding:3px" required />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12" style="text-align:center">
+                            <button type="submit" id="btnSubmit" class="btn btn-primary">
+                                <i class="fa fa-save"></i>
+                                <span>Upload Now</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+             }
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+        BindGrid("SliderList", "SliderList", '/Slider/GetSliderImages');
+    });
+    function OnAddNew() {
+        $("#myModal1").modal("show");
+    }
+    function OnGridDelete(e) {
+        var data, GetDeleteStatus;
+        var table = $('#GridSliderList').DataTable();
+        data = table.row(e.parentNode).data();
+        if (confirm("Are you sure to proceed?")) {
+            AjaxCall('/Slider/SliderDelete', JSON.stringify({ "Id": data.Id }), GetDeleteStatus, null);
+            BindGrid("SliderList", "SliderList", '/Slider/GetSliderImages');
+            alert("Slider deleted successfully");
+        }
+    }
+</script>

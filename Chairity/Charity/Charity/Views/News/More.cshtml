@@ -1,0 +1,50 @@
+﻿@model  Charity_Admin.Models.News
+
+@{
+    ViewBag.Title = "News";
+}
+
+<section class="inner-header divider parallax layer-overlay overlay-dark-5" data-stellar-background-ratio="0.5" data-bg-img="/Content/images/bg/bg1.jpg">
+    <div class="container pt-100 pb-50">
+        <!-- Section Content -->
+        <div class="section-content pt-100">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="title text-white">Blog</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Divider: Contact -->
+<section class="divider">
+    @if (!SessionManager.IsArabic && !SessionManager.IsTurkish)
+    {
+        <div class="container pt-0">
+            <div class="row mb-60 bg-deep">
+                <h3 style="color:black;">@Model.TitleEn</h3>
+            </div>
+            <p style="color:black;">@Model.DescriptionEn</p>
+        </div>
+    }
+    @if (SessionManager.IsArabic)
+    {
+        <div class="container pt-0">
+            <div class="row mb-60 bg-deep">
+                <h3 style="color:black;">@Model.TitleAr</h3>
+            </div>
+            <p style="color:black;">@Model.DescriptionAr</p>
+        </div>
+    }
+    @if (SessionManager.IsTurkish)
+    {
+        <div class="container pt-0">
+            <div class="row mb-60 bg-deep">
+                <h3 style="color:black;">@Model.TitleTu</h3>
+            </div>
+            <p style="color:black;">@Model.DescriptionTu</p>
+        </div>
+    }
+</section>
+
+

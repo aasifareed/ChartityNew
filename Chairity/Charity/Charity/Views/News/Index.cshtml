@@ -1,0 +1,99 @@
+﻿@model List<Charity_Admin.Models.News>
+@{
+    ViewBag.Title = "News";
+}
+
+<section class="inner-header divider parallax layer-overlay overlay-dark-5" data-stellar-background-ratio="0.5" data-bg-img="/Content/images/bg/bg1.jpg">
+    <div class="container pt-100 pb-50">
+        <!-- Section Content -->
+        <div class="section-content pt-100">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="title text-white">Blog</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row multi-row-clearfix">
+            <div class="blog-posts">
+                @if (Model.Count > 0)
+                {
+
+                    foreach (var o in Model)
+                    {
+
+                        <div class="col-md-4">
+                            <article class="post clearfix mb-30 bg-lighter">
+                                <div class="entry-header">
+                                    <div class="post-thumb thumb">
+                                        <img src="@Settings.BaseURL@o.ImagePath" alt="" class="img-responsive img-fullwidth">
+                                    </div>
+                                </div>
+                                @if (!SessionManager.IsArabic && !SessionManager.IsTurkish)
+                                {
+                                    <div class="entry-content p-20 pr-10">
+                                        <div class="entry-meta media mt-0 no-bg no-border">
+
+                                            <div class="media-body pl-15">
+                                                <div class="event-content pull-left flip">
+                                                    <h4 class="entry-title text-white text-uppercase m-0 mt-5"><a href="#">@o.TitleEn</a></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="mt-10 para">@(o.DescriptionEn.Length < 100 ? o.DescriptionEn : o.DescriptionEn.ToString().Substring(0, 100))</p>
+                                        <a href="/News/More?id=@o.Id.ToString()" class="btn-read-more pA">Read more</a>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                }
+                                else
+                                {
+                                    if (SessionManager.IsTurkish)
+                                    {
+                                        <div class="entry-content p-20 pr-10">
+                                            <div class="entry-meta media mt-0 no-bg no-border">
+
+                                                <div class="media-body pl-15">
+                                                    <div class="event-content pull-left flip">
+                                                        <h4 class="entry-title text-white text-uppercase m-0 mt-5"><a href="#">@o.TitleTu</a></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="mt-10 para">@(o.DescriptionTu.Length < 100 ? o.DescriptionTu : o.DescriptionTu.ToString().Substring(0, 100))</p>
+                                            <a href="/News/More?id=@o.Id.ToString()" class="btn-read-more pA">Read more</a>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    }
+                                    if (SessionManager.IsArabic)
+                                    {
+                                        <div class="entry-content p-20 pr-10">
+                                            <div class="entry-meta media mt-0 no-bg no-border">
+
+                                                <div class="media-body pl-15">
+                                                    <div class="event-content pull-left flip">
+                                                        <h4 class="entry-title text-white text-uppercase m-0 mt-5"><a href="#">@o.TitleAr</a></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="mt-10 para">@(o.DescriptionAr.Length < 100 ? o.DescriptionAr : o.DescriptionAr.ToString().Substring(0, 100))</p>
+                                            <a href="/News/More?id=@o.Id.ToString()" class="btn-read-more pA">Read more</a>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    }
+                                }
+                            </article>
+                        </div>
+
+
+                    }
+                }
+
+
+            </div>
+        </div>
+    </div>
+</section>
+

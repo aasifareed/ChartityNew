@@ -1,0 +1,45 @@
+﻿@model AdminQuantiu.CommonClasses.CheckPIN
+<h5 class="form-header">
+    Trading Accounts
+</h5>
+<form id="myForm" onsubmit="return validateForm(this)" role="form">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                @Html.EditorFor(model => model.PIN, new { htmlAttributes = new { @class = "form-control", @placeholder = "PIN", @type = "password", @required = "true" } })
+                @Html.ValidationMessageFor(model => model.PIN, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-12" style="text-align:center">
+            <button type="button" class="btn btn-success" id="btnSubmit">
+                <i class="fa fa-save"></i>
+                <span>Submit</span>
+            </button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-close"></i>Close</button>
+        </div>
+    </div>
+</form>
+<script>
+    $(document).ready(function () {
+        $("#btnSubmit").click(function () {
+            var myformdata = $("#myForm").serialize();
+            if (!$("#myForm").valid()) {
+                return false;
+            }
+            formpost("/Finances/CheckLedgerPIN", myformdata, GetFormStatus);
+        });
+    });
+    function GetFormStatus(data) {
+        $("#ModelAccount").modal("hide");
+        if (data != "false") {
+            showSuccessToast("PIN Verified Successfully.");
+            location.href = "/Security/TradingAccount";
+        }
+        else {
+            showErrorToast("In-correct PIN");
+        }
+    }
+</script>

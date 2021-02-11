@@ -1,0 +1,2047 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Manzoor-PC\Desktop\spub</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>12/30/2020 13:15:14</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>12/30/2020 13:15:14</publishTime>
+    </File>
+    <File Include="bin/Charity-Admin.dll">
+      <publishTime>12/30/2020 13:14:34</publishTime>
+    </File>
+    <File Include="bin/Charity.dll">
+      <publishTime>12/30/2020 13:14:39</publishTime>
+    </File>
+    <File Include="bin/Charity.dll.config">
+      <publishTime>12/30/2020 13:12:26</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>04/16/2020 20:38:42</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>04/16/2020 20:38:56</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/ajax-load/donation-form.html">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/ajax-load/modal-contact-form.html">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/ajax-load/volunteer-apply-form.html">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/css/animate.css">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap-rtl.min.css">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap.min.css">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/css/colors/theme-skin-blue.css">
+      <publishTime>12/28/2020 16:19:47</publishTime>
+    </File>
+    <File Include="Content/css/css-plugin-collections.css">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/css/custom-bootstrap-margin-padding.css">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/css/jquery-ui.min.css">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/css/menuzord-skins/menuzord-rounded-boxed.css">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/css/preloader.css">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/css/responsive.css">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/css/style-main-dark.css">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/css/style-main-rtl-extra.css">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/css/style-main-rtl.css">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/css/style-main.css">
+      <publishTime>12/30/2020 10:38:45</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/boxed-layout1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/boxed-layout2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/boxed-layout3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/boxed-layout4.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/boxed-layout5.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/boxed-layout6.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/dark-layout1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/dark-layout2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/dark-layout3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/dark-layout4.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/dark-layout5.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/dark-layout6.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/fullscreen-home.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/m1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/m2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/m3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/m4.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/m5.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/m6.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/magazine-home1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/magazine-home2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/parallax-home.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/personal-home.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/portfolio-presentation1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/portfolio-presentation2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/portfolio-presentation3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/rtl-layout1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/rtl-layout2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/rtl-layout3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/rtl-layout4.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/rtl-layout5.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/rtl-layout6.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/shop-home.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/split-home.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/demo-images/main/vertical-home.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/about/2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/about/about1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/about/about2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/about/w1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/apple-touch-icon-114x114.png">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/apple-touch-icon-144x144.png">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/apple-touch-icon-72x72.png">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/apple-touch-icon.png">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/bg/bg-sm1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/bg/bg-sm2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/bg/bg-sm3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/bg/bg1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/bg/bg10.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/bg/bg12.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/bg/bg13.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/bg/bg14.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/bg/bg16.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/bg/bg2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/bg/bg3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/bg/bg4.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/bg/bg5.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/bg/bg6.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/bg/bg7.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/bg/bg8.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/bg/bg9.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/blog/1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/blog/2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/blog/3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/blog/4.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/blog/author.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/blog/comment1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/blog/comment2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/blog/comment3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/blog/mega-menu.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/blog/square1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/blog/square2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/blog/square3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/blog/w1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/clients/1.png">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/clients/2.png">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/clients/3.png">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/clients/4.png">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/clients/5.png">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/clients/6.png">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/clients/w1.png">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/clients/w2.png">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/clients/w3.png">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/clients/w4.png">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/clients/w5.png">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/clients/w6.png">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/events/1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/events/2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/events/3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/favicon.png">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/about.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/accept_database.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/address_book.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/add_column.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/add_database.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/add_image.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/add_row.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/advance.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/advertising.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/alarm_clock.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/alphabetical_sorting_az.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/alphabetical_sorting_za.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/answers.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/approval.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/approve.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/area_chart.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/assistant.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/audio_file.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/automatic.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/automotive.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/bad_decision.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/bar_chart.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/bearish.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/binoculars.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/biohazard.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/biomass.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/biotech.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/bookmark.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/briefcase.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/broken_link.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/bullish.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/business.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/businessman.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/businesswoman.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/business_contact.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/butting_in.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/cable_release.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/calculator.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/calendar.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/callback.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/call_transfer.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/camcorder.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/camcorder_pro.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/camera.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/camera_addon.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/camera_identification.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/cancel.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/candle_sticks.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/capacitor.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/cell_phone.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/charge_battery.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/checkmark.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/circuit.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/clapperboard.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/clear_filters.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/clock.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/close_up_mode.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/cloth.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/collaboration.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/collapse.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/collect.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/combo_chart.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/comments.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/compact_camera.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/conference_call.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/contacts.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/copyleft.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/copyright.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/crystal_oscillator.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/currency_exchange.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/cursor.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/customer_support.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/dam.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/database.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/data_backup.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/data_configuration.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/data_encryption.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/data_protection.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/data_recovery.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/data_sheet.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/debt.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/decision.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/delete_column.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/delete_database.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/delete_row.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/department.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/deployment.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/diploma_1.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/diploma_2.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/disapprove.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/disclaimer.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/dislike.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/display.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/document.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/donate.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/doughnut_chart.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/down.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/download.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/down_left.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/down_right.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/do_not_inhale.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/do_not_insert.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/do_not_mix.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/edit_image.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/electrical_sensor.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/electrical_threshold.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/electricity.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/electronics.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/electro_devices.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/empty_battery.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/empty_filter.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/empty_trash.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/end_call.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/engineering.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/entering_heaven_alive.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/expand.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/expired.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/export.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/external.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/factory.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/factory_breakdown.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/faq.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/feedback.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/feed_in.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/file.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/filing_cabinet.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/filled_filter.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/film.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/film_reel.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/fine_print.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/flash_auto.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/flash_off.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/flash_on.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/flow_chart.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/folder.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/frame.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/full_battery.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/full_trash.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/gallery.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/genealogy.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/generic_sorting_asc.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/generic_sorting_desc.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/globe.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/good_decision.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/graduation_cap.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/grid.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/headset.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/heat_map.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/high_battery.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/high_priority.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/home.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/icons8_cup.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/idea.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/image_file.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/import.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/info.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/inspection.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/integrated_webcam.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/internal.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/invite.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/in_transit.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/ipad.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/iphone.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/key.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/kindle.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/landscape.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/leave.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/left.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/left_down.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/left_down2.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/left_up.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/left_up2.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/library.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/light_at_the_end_of_tunnel.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/like.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/like_placeholder.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/line_chart.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/link.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/list.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/lock.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/lock_landscape.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/lock_portrait.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/low_battery.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/low_priority.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/make_decision.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/manager.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/medium_priority.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/menu.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/middle_battery.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/mind_map.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/minus.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/missed_call.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/mms.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/money_transfer.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/multiple_cameras.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/multiple_devices.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/multiple_inputs.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/multiple_smartphones.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/music.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/negative_dynamic.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/neutral_decision.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/neutral_trading.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/news.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/next.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/night_landscape.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/night_portrait.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/nook.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/no_idea.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/no_video.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/numerical_sorting_12.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/numerical_sorting_21.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/ok.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/old_time_camera.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/online_support.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/opened_folder.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/organization.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/org_unit.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/overtime.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/package.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/paid.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/panorama.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/parallel_tasks.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/phone.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/phone_android.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/photo_reel.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/picture.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/pie_chart.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/planner.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/plus.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/podium_without_speaker.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/podium_with_audience.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/podium_with_speaker.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/portrait_mode.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/positive_dynamic.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/previous.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/print.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/privacy.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/process.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/puzzle.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/questions.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/radar_plot.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/rating.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/ratings.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/reading.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/reading_ebook.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/redo.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/refresh.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/registered_trademark.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/remove_image.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/reuse.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/right.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/right_down.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/right_down2.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/right_up.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/right_up2.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/rotate_camera.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/rotate_to_landscape.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/rotate_to_portrait.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/ruler.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/rules.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/safe.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/sales_performance.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/scatter_plot.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/search.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/selfie.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/self_service_kiosk.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/serial_tasks.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/services.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/service_mark.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/settings.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/share.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/shipped.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/shop.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/signature.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/sim_card.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/sim_card_chip.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/slr_back_side.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/smartphone_tablet.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/sms.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/sound_recording_copyright.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/speaker.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/sports_mode.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/stack_of_photos.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/start.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/statistics.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/support.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/survey.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/switch_camera.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/synchronize.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/tablet_android.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/template.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/timeline.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/todo_list.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/touchscreen_smartphone.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/trademark.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/tree_structure.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/two_smartphones.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/undo.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/unlock.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/up.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/upload.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/up_left.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/up_right.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/video_call.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/video_file.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/video_projector.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/view_details.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/vip.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/voicemail.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/voice_presentation.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/webcam.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/flat-color-icons-svg/workflow.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/10.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/11.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/12.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/4.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/5.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/6.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/7.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/8.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/9.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-lg1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-lg10.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-lg11.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-lg12.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-lg2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-lg3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-lg4.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-lg5.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-lg6.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-lg7.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-lg8.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-lg9.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-md1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-md10.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-md11.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-md12.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-md2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-md3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-md4.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-md5.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-md6.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-md7.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-md8.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-md9.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-sm1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-sm10.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-sm11.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-sm12.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-sm2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-sm3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-sm4.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-sm5.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-sm6.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-sm7.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-sm8.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/gallery-sm9.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/h1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/h2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/h3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/h4.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/h5.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/h6.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/h7.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/gallery/h8.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/logo-wide-white-footer.png">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/logo-wide-white.png">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/logo-wide.png">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/banner-ads2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/featured-img1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/featured-img2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/featured-img3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/featured-img4.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/fn-md1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/fn-md2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/fn-md3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/fn-md4.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/hn2-lg1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/lg2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/on-sm1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/on-sm2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/on-sm3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/on-sm4.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/tn-lg2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/wn-lg1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/wn-lg2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/wn-lg4.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/wn-sm1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/wn-sm2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/wn-sm4.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/wn2-md1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/wn2-md2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/wn2-sm1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/wn2-sm2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/wn2-sm3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/magazine/wn2-sm4.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/payment-card-logo-sm.png">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/photos/1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/photos/2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/photos/3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/photos/iphone.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/photos/rc1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/photos/rc2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/photos/rc3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/photos/volunteer.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/portfolio/1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/portfolio/2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/portfolio/3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/portfolio/h2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/portfolio/s1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/portfolio/s2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/portfolio/s3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/portfolio/s4.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/portfolio/s5.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/portfolio/s7.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/portfolio/s8.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/portfolio/w1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/portfolio/w2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/preloaders/1.gif">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/preloaders/10.gif">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/preloaders/11.gif">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/preloaders/12.gif">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/preloaders/13.png">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/preloaders/2.gif">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/preloaders/3.gif">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/preloaders/4.gif">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/preloaders/5.gif">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/preloaders/7.gif">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/preloaders/8.gif">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/preloaders/9.gif">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/products/1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/products/2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/products/3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/products/4.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/products/5.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/products/6.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/products/7.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/products/8.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/products/9.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/products/lg1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/products/shop1.png">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/products/sm1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/products/sm2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/products/sm3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/project/1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/project/2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/project/3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/project/4.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/project/5.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/project/6.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/project/7.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/project/8.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/project/l1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/project/l2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/project/l3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/project/l4.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/project/single-cause.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/team/1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/team/2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/team/3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/team/4.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/testimonials/1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/testimonials/2.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/testimonials/3.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/images/testimonials/s1.jpg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/includes/appointment.htm">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/includes/become-volunteer.htm">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/includes/job.htm">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/includes/quickcontact.htm">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/includes/sendmail.htm">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/bootstrap.min.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/calendar-events-data.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/chart.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/classycountdown/css/jquery.classycountdown.css">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/classycountdown/js/jquery.classycountdown.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/classycountdown/js/jquery.knob.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/classycountdown/js/jquery.throttle.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/custom.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/fullpage-slider/jquery.fullpage.min.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/google-map-init-multilocation.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/google-map-init.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/jquery-2.2.4.min.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/jquery-plugin-collection.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/jquery-ui.min.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/multiscroll-slider/jquery.multiscroll.min.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/revolution-slider/css/layers.css">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/revolution-slider/css/navigation.css">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/revolution-slider/css/settings.css">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/revolution-slider/js/extensions/revolution.extension.actions.min.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/revolution-slider/js/extensions/revolution.extension.carousel.min.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/revolution-slider/js/extensions/revolution.extension.kenburn.min.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/revolution-slider/js/extensions/revolution.extension.layeranimation.min.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/revolution-slider/js/extensions/revolution.extension.migration.min.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/revolution-slider/js/extensions/revolution.extension.navigation.min.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/revolution-slider/js/extensions/revolution.extension.parallax.min.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/revolution-slider/js/extensions/revolution.extension.video.min.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/revolution-slider/js/jquery.themepunch.revolution.min.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/revolution-slider/js/jquery.themepunch.tools.min.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/vertical-timeline/img/cd-icon-location.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/vertical-timeline/img/cd-icon-movie.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/js/vertical-timeline/img/cd-icon-picture.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>12/29/2020 15:14:55</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>12/30/2020 13:15:03</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.9-build00167.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.9-build00167.min.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="scripts/bootstrap.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="scripts/bootstrap.min.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="scripts/jquery-1.10.2.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="scripts/jquery-1.10.2.min.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="scripts/jquery-1.10.2.min.map">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="scripts/modernizr-2.6.2.js">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Views/About/Index.cshtml">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Views/Blog/Index.cshtml">
+      <publishTime>12/30/2020 10:37:53</publishTime>
+    </File>
+    <File Include="Views/Blog/More.cshtml">
+      <publishTime>12/29/2020 20:47:45</publishTime>
+    </File>
+    <File Include="Views/Contact/Index.cshtml">
+      <publishTime>12/29/2020 15:34:42</publishTime>
+    </File>
+    <File Include="Views/Contact/Res.cshtml">
+      <publishTime>12/29/2020 15:29:18</publishTime>
+    </File>
+    <File Include="Views/Donate/Index.cshtml">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Views/Gallery/Index.cshtml">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>12/30/2020 12:49:13</publishTime>
+    </File>
+    <File Include="Views/Home/Slider.cshtml">
+      <publishTime>12/30/2020 10:31:51</publishTime>
+    </File>
+    <File Include="Views/News/Index.cshtml">
+      <publishTime>12/30/2020 10:36:27</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>12/30/2020 10:40:59</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>12/22/2020 15:19:17</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/30/2020 13:14:59</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

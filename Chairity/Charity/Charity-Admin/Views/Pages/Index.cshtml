@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Pages";
+}
+
+<div class="py-7">
+    <h4 class="text-left" style="margin-left: 20px;">Pages</h4>
+   
+    <div class="px-4 px-md-6">
+        <div class="table-responsive">
+            <div id="PageList"></div>
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+
+   $(document).ready(function () {
+       BindGrid("PageList", "PageList", '/Pages/GetPagesList');
+   });
+
+   function OnGridEdit(e) {
+       var data, GetDeleteStatus;
+       var table = $('#GridPageList').DataTable();
+       data = table.row(e.parentNode).data();
+       window.location.replace("/Pages/GetPage?PageId=" + data.PageId);
+   }
+</script>  
+

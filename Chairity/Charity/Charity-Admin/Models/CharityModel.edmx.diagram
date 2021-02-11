@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2f7f084101bd4280b79c7a1c0afae3b8" Name="Diagram1">
+        <EntityTypeShape EntityType="CharityModel.Slider" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CharityModel.Gallary" Width="1.5" PointX="2.375" PointY="0.75" />
+        <EntityTypeShape EntityType="CharityModel.ContactU" Width="1.5" PointX="4" PointY="0.75" />
+        <EntityTypeShape EntityType="CharityModel.Blog" Width="1.5" PointX="0.75" PointY="2.5" />
+        <EntityTypeShape EntityType="CharityModel.Donation" Width="1.5" PointX="2.375" PointY="3.25" />
+        <EntityTypeShape EntityType="CharityModel.News" Width="1.5" PointX="4" PointY="3" />
+        <EntityTypeShape EntityType="CharityModel.Member" Width="1.5" PointX="5.625" PointY="0.75" />
+        <EntityTypeShape EntityType="CharityModel.Footer" Width="1.5" PointX="5.625" PointY="5.75" />
+        <EntityTypeShape EntityType="CharityModel.Menu" Width="1.5" PointX="5.625" PointY="3.75" />
+        <EntityTypeShape EntityType="CharityModel.Page" Width="1.5" PointX="2.375" PointY="5.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewBag.Title = "Donate";
+}
+
+
+
+<section class="inner-header divider parallax layer-overlay overlay-dark-6" data-bg-img="/Content/images/bg/bg6.jpg">
+    <div class="container pt-60 pb-60">
+        <!-- Section Content -->
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="title text-white">Paypal Recurring Donation</h3>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-push-3">
+                <h4 class="mt-0 pt-5 pA"> Make Recurring Donation with Paypal</h4>
+                <p class="para">Thank you for making a donation to our charitable organization. Please use the form below to pay your desired giving amount.</p>
+                <hr>
+                <form id="donation-form" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <div class="row">
+                        <input type="hidden" name="cmd" value="_xclick-subscriptions">
+                        <input type="hidden" name="business" value="accounts@thememascot.com">
+                        <input type="hidden" name="currency_code" value="USD">
+                       
+                        <div class="col-sm-12">
+                            <div class="form-group mb-20">
+                                <label><strong>I Want to Donate for</strong></label>
+                                <select name="item_name" class="form-control">
+                                    <option value="Educate Children">Educate Children</option>
+                                    <option value="Child Camps">Child Camps</option>
+                                    <option value="Clean Water for Life">Clean Water for Life</option>
+                                    <option value="Campaign for Child Poverty">Campaign for Child Poverty</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label><strong>How much do you want to donate?</strong></label>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">$</span>
+                                    <input type="text" value="100" placeholder="Enter Amount" id="amount" name="a3" class="form-control" required="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group mb-20">
+                                <label><strong>Donation Type</strong></label>
+                                <div class="radio mt-5">
+                                    <label class="radio-inline para">
+                                        <input type="radio" value="D" name="t3">
+                                        Daily
+                                    </label>
+                                    <label class="radio-inline para">
+                                        <input type="radio" value="W" name="t3">
+                                        Weekly
+                                    </label>
+                                    <label class="radio-inline para">
+                                        <input type="radio" value="M" name="t3">
+                                        Monthly
+                                    </label>
+                                    <label class="radio-inline para">
+                                        <input type="radio" value="Y" name="t3">
+                                        Yearly
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group mb-20">
+                                <input type="hidden" name="p3" value="1">
+                                <input type="hidden" name="rm" value="2">
+                                <input type="hidden" name="src" value="1">
+                                <input type="hidden" name="sra" value="1">
+                                <input type="hidden" name="no_shipping" value="0">
+                                <input type="hidden" name="no_note" value="1">
+                                <input type="hidden" name="lc" value="US">
+                                <input type="hidden" name="bn" value="PP-DonationsBF">
+                                <input type="hidden" name="return" value="http://www.yoursite.com/thankyou.html">
+                                <input type="hidden" name="cancel_return" value="http://www.yoursite.com/paymentcancel.html">
+                                <input type="hidden" name="notify_url" value="http://www.yoursite.com/notifypayment.php">
+                                <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+

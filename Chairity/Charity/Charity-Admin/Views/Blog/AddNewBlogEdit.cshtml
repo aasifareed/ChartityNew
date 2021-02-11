@@ -1,0 +1,141 @@
+﻿@model Charity_Admin.Models.Blog
+
+<style>
+    .modal-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: #00000d;
+        background-clip: padding-box;
+        border: 1px solid white;
+        border-radius: 0.3rem;
+        outline: 0;
+    }
+</style>
+<div>
+   @using (Html.BeginForm("AddUpdate", "Blog", FormMethod.Post, new { enctype = "multipart/form-data" }))
+   {
+
+        @Html.HiddenFor(m => m.Id)
+        @Html.HiddenFor(m => m.Date)
+        @Html.HiddenFor(m => m.ImagePath)
+        @Html.HiddenFor(model => model.IsDeleted)
+
+        <div class="modal-body">
+            <div style="padding-top:20px;"></div>
+            <div class="form-row">
+                <div class="col">
+                    <label for="inputEmail3" class="col-sm-4 control-label">Title (Arabic)</label>
+                    @Html.TextBoxFor(model => model.TitleAr, new { @class = "form-control", @required = "true" })
+                </div>
+                <div class="col">
+                    <label for="inputEmail3" class="col-sm-4 control-label">Title (Turkish)</label>
+                    @Html.TextBoxFor(model => model.TitleTu, new { @class = "form-control", @required = "true" })
+                </div>
+
+            </div>
+            <div style="padding-top:10px;"></div>
+            <div class="form-row">
+                <div class="col">
+                    <label for="inputEmail3" class="col-sm-4 control-label">Title (English)</label>
+                    @Html.TextBoxFor(model => model.TitleEn, new { @class = "form-control", @required = "true" })
+                </div>
+                <div class="col">
+                    <label for="inputEmail3" class="col-sm-4 control-label">Select Image</label>
+                    <input name="file" id="file" type="file" class="form-control" accept=".png,.jpg," style="width:100%;padding:3px" />
+                </div>
+            </div>
+
+            <div style="padding-top:10px;"></div>
+            <div class="form-row">
+                <div class="col">
+                    <label for="inputEmail3" class="col-sm-4 control-label">Description (Arabic)</label>
+                    @Html.TextAreaFor(model => model.DescriptionAr, new { @class = "form-control", @required = "true" })
+                </div>
+              
+            </div>
+            <div style="padding-top:10px;"></div>
+            <div class="form-row">
+            
+                <div class="col">
+                    <label for="inputEmail3" class="col-sm-4 control-label">Description (Turkish)</label>
+                    @Html.TextAreaFor(model => model.DescriptionTu, new { @class = "form-control", @required = "true" })
+                </div>
+            </div>
+            <div style="padding-top:10px;"></div>
+            <div class="form-row">
+                <div class="col">
+                    <label for="inputEmail3" class="col-sm-4 control-label">Description (English)</label>
+                    @Html.TextAreaFor(model => model.DescriptionEn, new { @class = "form-control", @required = "true" })
+                </div>
+                @*<div class="col">
+                    <label for="inputEmail3" class="col-sm-4 control-label">Follow Up</label>
+                    @Html.TextBoxFor(model => model.Date, new { @class = "form-control" })
+                </div>*@
+            </div>
+            <div style="padding-top:10px;"></div>
+            <div style="padding-top:20px;"></div>
+            <div class="col-12">
+                <div class="col-md-12" style="text-align:center">
+                    <button type="submit" id="btnSubmit" class="btn btn-primary">
+                        <i class="fa fa-save"></i>  @if (Model.Id > 0)
+                        {<span>Update</span> }
+                        else
+                        {<span>Save</span>}
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+   }
+    <div style="text-align:center;display:none" id="loaderDiv">
+        <img src="~/Content/img/load.gif" width="150" />
+    </div>
+</div>
+
+<script>
+  
+    $('#Date').datetimepicker({
+        language: 'en',
+        weekStart: 1,
+        todayBtn: 1,
+        //autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0,
+        format : "dd-mm-yyyy",
+        timezone: 'UTC',
+        startDate: new Date(),
+        autoclose: true
+
+    });
+
+    //$("#btnSubmit").click(function () {
+
+    //    var myformdata = $("#myForm").serialize();
+    //    //return validateForm(this)
+    //    if (!$("#myForm").valid()) {
+    //        HideLoading();
+    //        //alert("1");
+    //        return false;
+    //    }
+
+    //    formpost("/Blog/AddUpdate", myformdata, GetFormStatus);
+    //});
+    function GetFormStatus(data) {
+        $("#myModal1").modal("hide");
+        if (data == "true") {
+            //BindGrid("DatabaseList", "DatabaseList", '/Database/GetDatabasePoolList');
+            LoadList();
+            showSuccessToast("Blog saved Successfully.");
+        }
+        else {
+            showErrorToast("Something Went Wrong");
+        }
+    }
+   
+</script>

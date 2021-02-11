@@ -1,0 +1,1104 @@
+﻿
+/* General styles for the modal */
+/* 
+Styles for the html/body for special modal where we want 3d effects
+Note that we need a container wrapping all content on the page for the 
+perspective effects (not including the modals and the overlay).
+*/
+.modal-open {
+    overflow: hidden;
+}
+
+.modal-perspective,
+.modal-perspective body {
+    height: 100%;
+    overflow: hidden;
+}
+
+    .modal-perspective body {
+        background: #222;
+        -webkit-perspective: 600px;
+        perspective: 600px;
+    }
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1050;
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.modal-show {
+    visibility: visible;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1051;
+}
+
+.modal-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.modal-show ~ .modal-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Content styles */
+.modal-content {
+    position: relative;
+    border-radius: 3px;
+    margin: 30px auto;
+    max-width: 630px;
+    min-width: 320px;
+}
+
+.modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+}
+
+/* Effect 1: Fade in and scale up */
+.modal-effect-1 .modal-content {
+    -webkit-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    transform: scale(0.7);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.modal-show.modal-effect-1 .modal-content {
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Effect 2: Slide from the right */
+.modal-effect-2 .modal-content {
+    -webkit-transform: translateX(20%);
+    -o-transform: translateX(20%);
+    transform: translateX(20%);
+    opacity: 0;
+    -webkit-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+    -o-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+    transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+
+.modal-show.modal-effect-2 .modal-content {
+    -webkit-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Effect 3: Slide from the bottom */
+.modal-effect-3 .modal-content {
+    -webkit-transform: translateY(20%);
+    -o-transform: translateY(20%);
+    transform: translateY(20%);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.modal-show.modal-effect-3 .modal-content {
+    -webkit-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Effect 4: Newspaper */
+.modal-effect-4 .modal-content {
+    -webkit-transform: scale(0) rotate(720deg);
+    -o-transform: scale(0) rotate(720deg);
+    transform: scale(0) rotate(720deg);
+    opacity: 0;
+}
+
+.modal-show.modal-effect-4 ~ .modal-overlay,
+.modal-effect-4 .modal-content {
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.modal-show.modal-effect-4 .modal-content {
+    -webkit-transform: scale(1) rotate(0deg);
+    -o-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+}
+
+/* Effect 5: fall */
+.modal-effect-5.modal-container {
+    -webkit-perspective: 1300px;
+    perspective: 1300px;
+}
+
+.modal-effect-5 .modal-content {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translateZ(600px) rotateX(20deg);
+    transform: translateZ(600px) rotateX(20deg);
+    opacity: 0;
+}
+
+.modal-show.modal-effect-5 .modal-content {
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    -webkit-transform: translateZ(0px) rotateX(0deg);
+    transform: translateZ(0px) rotateX(0deg);
+    opacity: 1;
+}
+
+/* Effect 6: side fall */
+.modal-effect-6.modal-container {
+    -webkit-perspective: 1300px;
+    perspective: 1300px;
+}
+
+.modal-effect-6 .modal-content {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translate(30%) translateZ(600px) rotate(10deg);
+    transform: translate(30%) translateZ(600px) rotate(10deg);
+    opacity: 0;
+}
+
+.modal-show.modal-effect-6 .modal-content {
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    -webkit-transform: translate(0%) translateZ(0) rotate(0deg);
+    transform: translate(0%) translateZ(0) rotate(0deg);
+    opacity: 1;
+}
+
+/* Effect 7:  slide and stick to top */
+.modal-effect-7 {
+    top: 0;
+}
+
+    .modal-effect-7 .modal-content {
+        margin-top: 0;
+        -webkit-transform: translateY(-200%);
+        -o-transform: translateY(-200%);
+        transform: translateY(-200%);
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        opacity: 0;
+    }
+
+.modal-show.modal-effect-7 .modal-content {
+    -webkit-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+    border-radius: 0 0 3px 3px;
+    opacity: 1;
+}
+
+/* Effect 8: 3D flip horizontal */
+.modal-effect-8.modal-container {
+    -webkit-perspective: 1300px;
+    perspective: 1300px;
+}
+
+.modal-effect-8 .modal-content {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateY(-70deg);
+    transform: rotateY(-70deg);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.modal-show.modal-effect-8 .modal-content {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+
+/* Effect 9: 3D flip vertical */
+.modal-effect-9.modal-container {
+    -webkit-perspective: 1300px;
+    perspective: 1300px;
+}
+
+.modal-effect-9 .modal-content {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateX(-70deg);
+    transform: rotateX(-70deg);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.modal-show.modal-effect-9 .modal-content {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    opacity: 1;
+}
+
+/* Effect 10: 3D sign */
+.modal-effect-10.modal-container {
+    -webkit-perspective: 1300px;
+    perspective: 1300px;
+}
+
+.modal-effect-10 .modal-content {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateX(-60deg);
+    transform: rotateX(-60deg);
+    -webkit-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.modal-show.modal-effect-10 .modal-content {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    opacity: 1;
+}
+
+/* Effect 11: Super scaled */
+.modal-effect-11 .modal-content {
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.modal-show.modal-effect-11 .modal-content {
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Effect 12:  Just me */
+.modal-effect-12 .modal-content {
+    -webkit-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.modal-show.modal-effect-12 ~ .modal-overlay {
+    background: #000;
+}
+
+.modal-show.modal-effect-12 .modal-content {
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Effect 13: 3D slit */
+.modal-effect-13.modal-container {
+    -webkit-perspective: 1300px;
+    perspective: 1300px;
+}
+
+.modal-effect-13 .modal-content {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translateZ(-3000px) rotateY(90deg);
+    transform: translateZ(-3000px) rotateY(90deg);
+    opacity: 0;
+}
+
+.modal-show.modal-effect-13 .modal-content {
+    -webkit-animation: slit .7s forwards ease-out;
+    -o-animation: slit .7s forwards ease-out;
+    animation: slit .7s forwards ease-out;
+}
+
+
+/*My Code*/
+
+
+
+
+
+/* Effect 14:  3D Rotate from bottom */
+.modal-effect-14.modal-container {
+    -webkit-perspective: 1300px;
+    perspective: 1300px;
+}
+
+.modal-effect-14 .modal-content {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translateY(100%) rotateX(90deg);
+    transform: translateY(100%) rotateX(90deg);
+    -webkit-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.modal-show.modal-effect-14 .modal-content {
+    -webkit-transform: translateY(0%) rotateX(0deg);
+    transform: translateY(0%) rotateX(0deg);
+    opacity: 1;
+}
+
+/* Effect 15:  3D Rotate in from left */
+.modal-effect-15.modal-container {
+    -webkit-perspective: 1300px;
+    perspective: 1300px;
+}
+
+.modal-effect-15 .modal-content {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translateZ(100px) translateX(-30%) rotateY(90deg);
+    transform: translateZ(100px) translateX(-30%) rotateY(90deg);
+    -webkit-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.modal-show.modal-effect-15 .modal-content {
+    -webkit-transform: translateZ(0px) translateX(0%) rotateY(0deg);
+    transform: translateZ(0px) translateX(0%) rotateY(0deg);
+    opacity: 1;
+}
+
+/* Effect 16:  Blur */
+.modal-show.modal-effect-16 ~ .modal-overlay {
+    background: rgba(180, 46, 32, 0.5);
+}
+
+.modal-show.modal-effect-16 ~ .container {
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.modal-effect-16 .modal-content {
+    -webkit-transform: translateY(-5%);
+    -o-transform: translateY(-5%);
+    transform: translateY(-5%);
+    opacity: 0;
+}
+
+.modal-show.modal-effect-16 ~ .container,
+.modal-effect-16 .modal-content {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.modal-show.modal-effect-16 .modal-content {
+    -webkit-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Effect 17:  Slide in from bottom with perspective on container */
+.modal-show.modal-effect-17 ~ .container {
+    height: 100%;
+    overflow: hidden;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    -o-transition: -o-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s, -o-transform 0.3s;
+}
+
+.modal-show.modal-effect-17 ~ .container,
+.modal-show.modal-effect-17 ~ .modal-overlay {
+    -webkit-transform: rotateX(-2deg);
+    transform: rotateX(-2deg);
+    -webkit-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.modal-effect-17 .modal-content {
+    opacity: 0;
+    -webkit-transform: translateY(200%);
+    -o-transform: translateY(200%);
+    transform: translateY(200%);
+}
+
+.modal-show.modal-effect-17 .modal-content {
+    -webkit-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+    -webkit-transition: all 0.3s 0.2s;
+    -o-transition: all 0.3s 0.2s;
+    transition: all 0.3s 0.2s;
+}
+
+/* Effect 18:  Slide from right with perspective on container */
+.modal-show.modal-effect-18 ~ .container {
+    height: 100%;
+    overflow: hidden;
+}
+
+.modal-show.modal-effect-18 ~ .modal-overlay {
+    background: rgba(143, 27, 15, 0.8);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.modal-show.modal-effect-18 ~ .container,
+.modal-show.modal-effect-18 ~ .modal-overlay {
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin: 0% 50%;
+    -webkit-animation: rotateRightSideFirst 0.5s forwards ease-in;
+    -moz-transform-style: preserve-3d;
+    -moz-transform-origin: 0% 50%;
+    -moz-animation: rotateRightSideFirst 0.5s forwards ease-in;
+    transform-style: preserve-3d;
+    -o-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+    -o-animation: rotateRightSideFirst 0.5s forwards ease-in;
+    animation: rotateRightSideFirst 0.5s forwards ease-in;
+}
+
+
+/*My Code*/
+
+
+
+.modal-effect-18 .modal-content {
+    -webkit-transform: translateX(200%);
+    -o-transform: translateX(200%);
+    transform: translateX(200%);
+    opacity: 0;
+}
+
+.modal-show.modal-effect-18 .modal-content {
+    -webkit-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+    -webkit-transition: all 0.5s 0.1s;
+    -o-transition: all 0.5s 0.1s;
+    transition: all 0.5s 0.1s;
+}
+
+
+/*My Code*/
+
+
+
+
+
+
+.modal-content {
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    background-color: #FFFFFF;
+    color: #545454;
+    border: none;
+    border-radius: 0;
+    max-width: 545px;
+}
+
+.modal-header {
+    border: 0;
+    padding: 19px;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+    .modal-header h1, .modal-header h2, .modal-header h3, .modal-header h4, .modal-header h5, .modal-header h6 {
+        display: block;
+        margin: 0;
+        color: #545454;
+    }
+
+    .modal-header .close {
+        font-size: 20px;
+        opacity: 0.4;
+        text-shadow: none;
+    }
+
+        .modal-header .close:hover {
+            opacity: 0.8;
+        }
+
+.modal-body {
+    padding: 20px 30px 30px;
+}
+
+    .modal-body .row:last-child .form-group {
+        margin-bottom: 0;
+    }
+
+.modal-main-icon {
+    display: inline-block;
+    height: 77px;
+    width: 77px;
+    line-height: normal;
+    font-size: 77px;
+    margin-bottom: 37px;
+}
+
+.modal-footer {
+    padding: 20px 30px;
+    border: none;
+}
+
+.modal-dark .modal-content {
+    background-color: #323232;
+    color: #d1d1d1;
+}
+
+.modal-dark .modal-header .close {
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+    .modal-dark .modal-header .close:hover {
+        opacity: 1;
+    }
+
+.modal-dark .btn {
+    border-width: 0;
+}
+
+.modal-dark .modal-footer .btn-link-secondary {
+    color: #e0e0e0;
+}
+
+    .modal-dark .modal-footer .btn-link-secondary:hover {
+        color: #cccccc;
+    }
+
+.modal-header-colored {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
+
+    .modal-header-colored + .modal-body {
+        padding-top: 30px;
+    }
+
+.modal-dark .modal-header-colored {
+    background-color: #4a4a4a;
+}
+
+    .modal-dark .modal-header-colored h1, .modal-dark .modal-header-colored h2, .modal-dark .modal-header-colored h3, .modal-dark .modal-header-colored h4, .modal-dark .modal-header-colored h5, .modal-dark .modal-header-colored h6 {
+        color: #d1d1d1;
+    }
+
+.modal-header-colored-primary, .modal-dark .modal-header-colored-primary {
+    background-color: #2cc185;
+}
+
+    .modal-header-colored-primary h1, .modal-header-colored-primary h2, .modal-header-colored-primary h3, .modal-header-colored-primary h4, .modal-header-colored-primary h5, .modal-header-colored-primary h6, .modal-dark .modal-header-colored-primary h1, .modal-dark .modal-header-colored-primary h2, .modal-dark .modal-header-colored-primary h3, .modal-dark .modal-header-colored-primary h4, .modal-dark .modal-header-colored-primary h5, .modal-dark .modal-header-colored-primary h6 {
+        color: #FFFFFF;
+    }
+
+    .modal-header-colored-primary .close, .modal-dark .modal-header-colored-primary .close {
+        color: #FFFFFF;
+        opacity: 0.6;
+    }
+
+        .modal-header-colored-primary .close:hover, .modal-dark .modal-header-colored-primary .close:hover {
+            opacity: 1;
+        }
+
+.modal-header-colored-success, .modal-dark .modal-header-colored-success {
+    background-color: #2cc185;
+}
+
+    .modal-header-colored-success h1, .modal-header-colored-success h2, .modal-header-colored-success h3, .modal-header-colored-success h4, .modal-header-colored-success h5, .modal-header-colored-success h6, .modal-dark .modal-header-colored-success h1, .modal-dark .modal-header-colored-success h2, .modal-dark .modal-header-colored-success h3, .modal-dark .modal-header-colored-success h4, .modal-dark .modal-header-colored-success h5, .modal-dark .modal-header-colored-success h6 {
+        color: #FFFFFF;
+    }
+
+    .modal-header-colored-success .close, .modal-dark .modal-header-colored-success .close {
+        color: #FFFFFF;
+        opacity: 0.6;
+    }
+
+        .modal-header-colored-success .close:hover, .modal-dark .modal-header-colored-success .close:hover {
+            opacity: 1;
+        }
+
+.modal-header-colored-info, .modal-dark .modal-header-colored-info {
+    background-color: #58C7EF;
+}
+
+    .modal-header-colored-info h1, .modal-header-colored-info h2, .modal-header-colored-info h3, .modal-header-colored-info h4, .modal-header-colored-info h5, .modal-header-colored-info h6, .modal-dark .modal-header-colored-info h1, .modal-dark .modal-header-colored-info h2, .modal-dark .modal-header-colored-info h3, .modal-dark .modal-header-colored-info h4, .modal-dark .modal-header-colored-info h5, .modal-dark .modal-header-colored-info h6 {
+        color: #FFFFFF;
+    }
+
+    .modal-header-colored-info .close, .modal-dark .modal-header-colored-info .close {
+        color: #FFFFFF;
+        opacity: 0.6;
+    }
+
+        .modal-header-colored-info .close:hover, .modal-dark .modal-header-colored-info .close:hover {
+            opacity: 1;
+        }
+
+.modal-header-colored-warning, .modal-dark .modal-header-colored-warning {
+    background-color: #FFDC42;
+}
+
+    .modal-header-colored-warning h1, .modal-header-colored-warning h2, .modal-header-colored-warning h3, .modal-header-colored-warning h4, .modal-header-colored-warning h5, .modal-header-colored-warning h6, .modal-dark .modal-header-colored-warning h1, .modal-dark .modal-header-colored-warning h2, .modal-dark .modal-header-colored-warning h3, .modal-dark .modal-header-colored-warning h4, .modal-dark .modal-header-colored-warning h5, .modal-dark .modal-header-colored-warning h6 {
+        color: #FFFFFF;
+    }
+
+    .modal-header-colored-warning .close, .modal-dark .modal-header-colored-warning .close {
+        color: #FFFFFF;
+        opacity: 0.6;
+    }
+
+        .modal-header-colored-warning .close:hover, .modal-dark .modal-header-colored-warning .close:hover {
+            opacity: 1;
+        }
+
+.modal-header-colored-danger, .modal-dark .modal-header-colored-danger {
+    background-color: #F45846;
+}
+
+    .modal-header-colored-danger h1, .modal-header-colored-danger h2, .modal-header-colored-danger h3, .modal-header-colored-danger h4, .modal-header-colored-danger h5, .modal-header-colored-danger h6, .modal-dark .modal-header-colored-danger h1, .modal-dark .modal-header-colored-danger h2, .modal-dark .modal-header-colored-danger h3, .modal-dark .modal-header-colored-danger h4, .modal-dark .modal-header-colored-danger h5, .modal-dark .modal-header-colored-danger h6 {
+        color: #FFFFFF;
+    }
+
+    .modal-header-colored-danger .close, .modal-dark .modal-header-colored-danger .close {
+        color: #FFFFFF;
+        opacity: 0.6;
+    }
+
+        .modal-header-colored-danger .close:hover, .modal-dark .modal-header-colored-danger .close:hover {
+            opacity: 1;
+        }
+
+.modal-header-colored-dark, .modal-dark .modal-header-colored-dark {
+    background-color: #323232;
+}
+
+    .modal-header-colored-dark h1, .modal-header-colored-dark h2, .modal-header-colored-dark h3, .modal-header-colored-dark h4, .modal-header-colored-dark h5, .modal-header-colored-dark h6, .modal-dark .modal-header-colored-dark h1, .modal-dark .modal-header-colored-dark h2, .modal-dark .modal-header-colored-dark h3, .modal-dark .modal-header-colored-dark h4, .modal-dark .modal-header-colored-dark h5, .modal-dark .modal-header-colored-dark h6 {
+        color: #d1d1d1;
+    }
+
+    .modal-header-colored-dark .close, .modal-dark .modal-header-colored-dark .close {
+        color: #FFFFFF;
+        opacity: 0.6;
+    }
+
+        .modal-header-colored-dark .close:hover, .modal-dark .modal-header-colored-dark .close:hover {
+            opacity: 1;
+        }
+
+.modal-full-color .modal-content {
+    color: #FFFFFF;
+}
+
+.modal-full-color .modal-header .close {
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+    .modal-full-color .modal-header .close:hover {
+        opacity: 1;
+    }
+
+.modal-full-color .modal-footer .btn-link-secondary {
+    color: #FFFFFF;
+}
+
+    .modal-full-color .modal-footer .btn-link-secondary:hover {
+        color: #ebebeb;
+    }
+
+.modal-full-color .btn {
+    border-width: 0;
+}
+
+.modal-full-color .btn-primary,
+.modal-full-color .btn-success,
+.modal-full-color .btn-info,
+.modal-full-color .btn-warning,
+.modal-full-color .btn-danger,
+.modal-full-color .btn-dark {
+    background-color: transparent;
+}
+
+    .modal-full-color .btn-primary:focus,
+    .modal-full-color .btn-success:focus,
+    .modal-full-color .btn-info:focus,
+    .modal-full-color .btn-warning:focus,
+    .modal-full-color .btn-danger:focus,
+    .modal-full-color .btn-dark:focus {
+        background-color: transparent;
+    }
+
+    .modal-full-color .btn-primary:hover, .modal-full-color .btn-primary .hover,
+    .modal-full-color .btn-success:hover,
+    .modal-full-color .btn-success .hover,
+    .modal-full-color .btn-info:hover,
+    .modal-full-color .btn-info .hover,
+    .modal-full-color .btn-warning:hover,
+    .modal-full-color .btn-warning .hover,
+    .modal-full-color .btn-danger:hover,
+    .modal-full-color .btn-danger .hover,
+    .modal-full-color .btn-dark:hover,
+    .modal-full-color .btn-dark .hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .modal-full-color .btn-primary:active,
+    .modal-full-color .btn-success:active,
+    .modal-full-color .btn-info:active,
+    .modal-full-color .btn-warning:active,
+    .modal-full-color .btn-danger:active,
+    .modal-full-color .btn-dark:active {
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+
+.modal-full-color-primary .modal-header {
+    background-color: #2cc185;
+}
+
+.modal-full-color-primary .modal-body, .modal-full-color-primary .modal-footer {
+    background-color: #2cc185;
+}
+
+.modal-full-color-primary .btn-default {
+    color: #2cc185;
+}
+
+    .modal-full-color-primary .btn-default:active {
+        color: #2cc185;
+    }
+
+.modal-full-color-success .modal-header {
+    background-color: #2cc185;
+}
+
+.modal-full-color-success .modal-body, .modal-full-color-success .modal-footer {
+    background-color: #2cc185;
+}
+
+.modal-full-color-success .btn-default {
+    color: #2cc185;
+}
+
+    .modal-full-color-success .btn-default:active {
+        color: #2cc185;
+    }
+
+.modal-full-color-info .modal-header {
+    background-color: #58C7EF;
+}
+
+.modal-full-color-info .modal-body, .modal-full-color-info .modal-footer {
+    background-color: #58C7EF;
+}
+
+.modal-full-color-info .btn-default {
+    color: #58C7EF;
+}
+
+    .modal-full-color-info .btn-default:active {
+        color: #58C7EF;
+    }
+
+.modal-full-color-warning .modal-header {
+    background-color: #FFDC42;
+}
+
+.modal-full-color-warning .modal-body, .modal-full-color-warning .modal-footer {
+    background-color: #FFDC42;
+}
+
+.modal-full-color-warning .btn-default {
+    color: #FFDC42;
+}
+
+    .modal-full-color-warning .btn-default:active {
+        color: #FFDC42;
+    }
+
+.modal-full-color-danger .modal-header {
+    background-color: #F45846;
+}
+
+.modal-full-color-danger .modal-body, .modal-full-color-danger .modal-footer {
+    background-color: #F45846;
+}
+
+.modal-full-color-danger .btn-default {
+    color: #F45846;
+}
+
+    .modal-full-color-danger .btn-default:active {
+        color: #F45846;
+    }
+
+.modal-full-color-dark .modal-header {
+    background-color: #323232;
+}
+
+.modal-full-color-dark .modal-body, .modal-full-color-dark .modal-footer {
+    background-color: #323232;
+}
+
+.modal-full-color-dark .btn-default {
+    color: #323232;
+}
+
+    .modal-full-color-dark .btn-default:active {
+        color: #323232;
+    }
+
+.full-width {
+    max-width: none;
+}
+
+    .full-width .modal-content {
+        max-width: none;
+        width: 90%;
+    }
+
+@media (max-width: 575px) {
+    .modal-dialog {
+        min-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+.mai-modal-open {
+    overflow-x: visible;
+}
+
+
+/*My Code*/
+
+
+
+
+.modal-open {
+    overflow: hidden;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+}
+
+    .modal.fade .modal-dialog {
+        -webkit-transition: -webkit-transform 0.3s ease-out;
+        transition: -webkit-transform 0.3s ease-out;
+        -o-transition: -o-transform 0.3s ease-out;
+        transition: transform 0.3s ease-out;
+        transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out, -o-transform 0.3s ease-out;
+        -webkit-transform: translate(0, -25%);
+        -o-transform: translate(0, -25%);
+        transform: translate(0, -25%);
+    }
+
+    .modal.show .modal-dialog {
+        -webkit-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    outline: 0;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+}
+
+    .modal-backdrop.fade {
+        opacity: 0;
+    }
+
+    .modal-backdrop.show {
+        opacity: 0.5;
+    }
+
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.538;
+}
+
+.modal-body {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+}
+
+.modal-footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 15px;
+    border-top: 1px solid #eceeef;
+}
+
+    .modal-footer > :not(:first-child) {
+        margin-left: .25rem;
+    }
+
+    .modal-footer > :not(:last-child) {
+        margin-right: .25rem;
+    }
+
+.modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 545px;
+        margin: 30px auto;
+    }
+
+    .modal-sm {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-lg {
+        max-width: 750px;
+    }
+}
+
+
+/*My Code*/
+

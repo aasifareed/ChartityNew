@@ -1,0 +1,19 @@
+﻿@model Charity_Admin.Models.Page
+
+@if (!SessionManager.IsArabic && !SessionManager.IsTurkish)
+{
+    <span>@Html.Raw(Model.Content_Eng)</span>
+}
+else
+{
+    if (SessionManager.IsTurkish)
+    {
+        <span>@Html.Raw(Model.Content_Tr)</span>
+    }
+    if (SessionManager.IsArabic)
+    {
+        <span>@Html.Raw(Model.Content_Ar)</span>
+    }
+}
+
+
