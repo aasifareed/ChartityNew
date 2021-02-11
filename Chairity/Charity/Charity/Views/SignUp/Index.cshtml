@@ -32,7 +32,7 @@
 
                             <div class="form-group">
                                 <div class="input-group">
-                                    <span class="input-group-addon">Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    <span class="input-group-addon">First Name&nbsp;&nbsp;</span>
                                     <input type="text" Id="Name" class="form-control" required="">
                                 </div>
                             </div>
@@ -41,7 +41,16 @@
 
                             <div class="form-group">
                                 <div class="input-group">
-                                    <span class="input-group-addon">Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    <span class="input-group-addon">Last Name&nbsp;&nbsp;&nbsp;</span>
+                                    <input type="text" Id="SurName" class="form-control" required="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                                     <input type="text" Id="Email" class="form-control" required="">
                                 </div>
                             </div>
@@ -50,11 +59,60 @@
 
                             <div class="form-group">
                                 <div class="input-group">
-                                    <span class="input-group-addon">Password</span>
-                                    <input type="password"  Id="Password" class="form-control" required="">
+                                    <span class="input-group-addon">Country&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    <select id="Country" class="form-control " required>
+                                        @*<option value=""></option>
+                                        <option value="USA">USA</option>
+                                        <option value="Tokyo">Tokyo</option>*@
+                                    </select>
+
+                                    @*<input type="text" Id="Country" class="form-control" required="">*@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-sm-12">
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Province&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    <input type="text" Id="Province" class="form-control" required="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">District&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    <input type="text" Id="District" class="form-control" required="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    <select id="Gender" class="form-control " required>
+                                        <option value=""></option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12">
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    <input type="password" Id="Password" class="form-control" required="">
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <div class="input-group">
@@ -72,6 +130,11 @@
 </section>
 
 <script>
+    $(document).ready(function () {
+
+        LoadCountry();
+    });
+
     $(function () {
     
         $("#btnSingUp").click(function () {
@@ -79,6 +142,11 @@
             var model = {};
             model.Name = $("#Name").val();
             model.Email = $("#Email").val();
+            model.Country = $("#Country").val();
+            model.SurName = $("#SurName").val();
+            model.Province = $("#Province").val();
+            model.District = $("#District").val();
+            model.Gender = $("#Gender").val();
             model.Password = $("#Password").val();
             $.ajax({
                 type: "POST",
@@ -101,4 +169,34 @@
             return false;
         });
     });
+    function LoadCountry() {
+       
+        let _Country = $('#Country');
+        $.ajax({
+            type: 'POST',
+            url: '/SignUp/LoadCountry',
+            dataType: 'json',
+            contentType: "application/json; charset=utf-8",
+            success: function (res) {
+
+               
+                
+                $.each(res, function (key, item) {
+
+                    if (item == "Select Country") {
+                        _Country.append("<option value=''>" + item + "</option>");
+                    }
+                    else {
+                        _Country.append("<option value='" + item + "'>" + item + "</option>");
+                    }
+
+                });
+
+
+            },
+            error: function (err) {
+           alert(err.responseText);
+            }
+        });
+    }
 </script>

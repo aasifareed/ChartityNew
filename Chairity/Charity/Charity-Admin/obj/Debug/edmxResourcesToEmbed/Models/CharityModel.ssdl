@@ -76,6 +76,10 @@
     <Property Name="Email" Type="nvarchar" MaxLength="250" />
     <Property Name="Password" Type="nvarchar" MaxLength="50" />
     <Property Name="Country" Type="nvarchar" MaxLength="50" />
+    <Property Name="SurName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Province" Type="nvarchar" MaxLength="50" />
+    <Property Name="District" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="50" />
     <Property Name="CreatedOn" Type="date" />
   </EntityType>
   <EntityType Name="Menus">

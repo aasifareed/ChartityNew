@@ -79,3 +79,28 @@ H:\MY Projects  Portfolio\Saim Turkey\Chairity\Charity\Charity-Admin\bin\EntityF
 H:\MY Projects  Portfolio\Saim Turkey\Chairity\Charity\Charity-Admin\bin\EntityFramework.xml
 H:\MY Projects  Portfolio\Saim Turkey\Chairity\Charity\Charity-Admin\bin\EntityFramework.SqlServer.xml
 H:\MY Projects  Portfolio\Saim Turkey\Chairity\Charity\Charity-Admin\obj\Debug\Charity-Admin.csprojResolveAssemblyReference.cache
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\bin\ApplicationInsights.config
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\bin\roslyn\csc.exe
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\bin\roslyn\vbc.exe
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\bin\roslyn\VBCSCompiler.exe
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\bin\Charity-Admin.dll.config
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\bin\Charity-Admin.dll
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\bin\Charity-Admin.pdb
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\bin\EntityFramework.dll
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\bin\EntityFramework.SqlServer.dll
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\bin\EntityFramework.xml
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\bin\EntityFramework.SqlServer.xml
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\obj\Debug\Charity-Admin.csprojAssemblyReference.cache
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\obj\Debug\Charity-Admin.csproj.CoreCompileInputs.cache
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\obj\Debug\Charity-Admin.csproj.CopyComplete
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\obj\Debug\Charity-Admin.dll
+C:\Users\JOSHUA\Source\Repos\ManzoorPK\ChartityNew\Chairity\Charity\Charity-Admin\obj\Debug\Charity-Admin.pdb

@@ -87,6 +87,10 @@
     <EntitySetMapping Name="Members">
       <EntityTypeMapping TypeName="CharityModel.Member">
         <MappingFragment StoreEntitySet="Members">
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="District" ColumnName="District" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="SurName" ColumnName="SurName" />
           <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
           <ScalarProperty Name="Country" ColumnName="Country" />
           <ScalarProperty Name="Password" ColumnName="Password" />
